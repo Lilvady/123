@@ -15,7 +15,6 @@ class MainApp(PyQt6.QtWidgets.QApplication):
         self.show_login_window()
 
     def show_login_window(self):
-        # Обратите внимание на порядок и типы аргументов
         self.login_window = LoginWindow(database=self.database, parent=None)
         self.login_window.show()
 
